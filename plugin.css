@@ -1,0 +1,7 @@
+#toolbar-menu li:last-child {
+	position: absolute;
+	right: 10px;
+}
+button.send {
+	display: none;
+}

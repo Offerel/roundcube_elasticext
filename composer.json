@@ -1,0 +1,25 @@
+{
+	"name": "offerel/elasticsend",
+	"description": "Move the send button to the main toolbar",
+	"keywords": ["mail","plugin","compose","button","toolbar","roundcube"],
+	"homepage": "https://github.com/Offerel/roundcube_elasticsend",
+	"type": "roundcube-plugin",
+	"license": "AGPL-3.0",
+	"version": "0.0.1",
+	"authors": [
+	{
+		"name": "Offerel",
+		"homepage": "https://github.com/Offerel",
+		"role": "Developer"
+	}
+	],
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://plugins.roundcube.net"
+		}
+	],
+	"require": {
+		"roundcube/plugin-installer": ">=0.1.7"
+	}
+}

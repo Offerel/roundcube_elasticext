@@ -8,8 +8,6 @@
  * @license GNU General Public License, version 3
  */
 class elasticsend extends rcube_plugin {
-	//public $task = '*';
-	//public $task = 'mail';
 	public function init() {
 		$this->include_stylesheet('css/plugin.min.css');
 		$this->include_script('js/plugin.min.js');

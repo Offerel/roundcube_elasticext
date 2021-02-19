@@ -1,11 +1,11 @@
 {
-	"name": "offerel/elasticsend",
-	"description": "Move the send button to the main toolbar",
-	"keywords": ["mail","plugin","compose","button","toolbar","roundcube"],
-	"homepage": "https://github.com/Offerel/roundcube_elasticsend",
+	"name": "offerel/elasticext",
+	"description": "Tweaks for elastic skin",
+	"keywords": ["login","mail","plugin","compose","button","toolbar","roundcube"],
+	"homepage": "https://github.com/Offerel/roundcube_elasticext",
 	"type": "roundcube-plugin",
 	"license": "AGPL-3.0",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"authors": [
 	{
 		"name": "Offerel",

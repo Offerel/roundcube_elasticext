@@ -1,2 +1,2 @@
-# Elastic Send Plugin (Roundcube)
-This really simple addon movers the send button from the bottom of the compose window to the right side of the main toolbar. It only works, if there are no additional addons, which changes the buttons in this toolbar and it only works with elastic theme.
+# Elastic Ext Plugin (Roundcube)
+This plugin makes some simple tweaks for the Roundcube elastic skin. For example it moves the send button from the bottom of the compose window to the top right side of the main toolbar. Optionaly, you can also tweak the loginscreen a little bit to make it not that bring. This plugins works only with elastic skin. If you use another skin, the plugin should have no effect.

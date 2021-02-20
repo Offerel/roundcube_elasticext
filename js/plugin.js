@@ -1,7 +1,7 @@
 /**
  * Roundcube Elastic Ext Plugin
  *
- * @version 0.0.2
+ * @version 0.0.3
  * @author Offerel
  * @copyright Copyright (c) 2021, Offerel
  * @license GNU General Public License, version 3
@@ -11,6 +11,16 @@ window.onload = function() {
 	if(document.getElementById('02b95bc8-faf2-4aaa-b095-3304aac59bef')) {
 		let sbutton = document.getElementById('02b95bc8-faf2-4aaa-b095-3304aac59bef');
 		sbutton.parentElement.style = rcmail.env.aligndir + ': 10px; position: absolute;';
+
+		let wheight = window.innerHeight;
+		let tbarheight = document.getElementById('toolbar-menu').offsetHeight;
+		let header = document.getElementById('compose-headers');
+		let econtainer = document.getElementById('composebodycontainer');
+		let mcetbar = document.querySelector('.mce-top-part');
+		let earea = document.querySelector('.mce-edit-area');
+
+		new ResizeObserver(() => econtainer.style.height = (wheight - tbarheight - header.offsetHeight - 40) + 'px').observe(header);
+		new ResizeObserver(() => earea.style.top = mcetbar.offsetHeight + 'px').observe(mcetbar);
 	}
 
 	if(rcmail.env.exlogin) {

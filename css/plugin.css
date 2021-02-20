@@ -28,13 +28,16 @@ html.bgextended {
 	padding-right: 10px;
 	line-height: 20px;
 }
-button.send {
+button.exsend {
 	display: none;
 }
 #composebodycontainer {
 	position: relative;
 	overflow: hidden;
-}	
+}
+.formcontainer .formcontent {
+	height: 100%;
+}
 .mce-container-body {
 	height: 100% !important;
 }
@@ -44,9 +47,7 @@ button.send {
 }
 .mce-edit-area {
 	overflow: hidden auto;
-	bottom: 0;
-	position: absolute !important;
 	width: 100% !important;
 	background: white !important;
-
+	height: calc(100% - 28px) !important;
 }

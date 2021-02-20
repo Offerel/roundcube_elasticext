@@ -1,3 +1,8 @@
+### v0.0.4
+ - fixed small glitch in dynamic editor
+ - added option to enable/change compose changes
+
+
 ### v0.0.3
  - editor resizes dynamically
 

@@ -10,17 +10,15 @@ window.onload = function() {
 	window.rcmail;
 	if(document.getElementById('02b95bc8-faf2-4aaa-b095-3304aac59bef')) {
 		let sbutton = document.getElementById('02b95bc8-faf2-4aaa-b095-3304aac59bef');
-		sbutton.parentElement.style = rcmail.env.aligndir + ': 10px; position: absolute;';
+		let alignment = (rcmail.env.aligndir == 1) ? 'left':'right';
+		sbutton.parentElement.style = alignment + ': 10px; position: absolute;';
 
-		let wheight = window.innerHeight;
-		let tbarheight = document.getElementById('toolbar-menu').offsetHeight;
+		document.querySelector('button.send').classList.add('exsend');
+
+		let tbarheight = window.innerHeight - document.getElementById('toolbar-menu').offsetHeight - 40;
 		let header = document.getElementById('compose-headers');
-		let econtainer = document.getElementById('composebodycontainer');
-		let mcetbar = document.querySelector('.mce-top-part');
-		let earea = document.querySelector('.mce-edit-area');
 
-		new ResizeObserver(() => econtainer.style.height = (wheight - tbarheight - header.offsetHeight - 40) + 'px').observe(header);
-		new ResizeObserver(() => earea.style.top = mcetbar.offsetHeight + 'px').observe(mcetbar);
+		new ResizeObserver(() => document.getElementById('composebodycontainer').style.height = (tbarheight - header.offsetHeight) + 'px').observe(header);
 	}
 
 	if(rcmail.env.exlogin) {

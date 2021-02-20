@@ -2,7 +2,7 @@
 /**
  * Roundcube Elastic Ext Plugin
  *
- * @version 0.0.3
+ * @version 0.0.4
  * @author Offerel
  * @copyright Copyright (c) 2021, Offerel
  * @license GNU General Public License, version 3

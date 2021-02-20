@@ -1,4 +1,4 @@
 <?php
-$config['button_alignment'] = 'right'; // left, right or false
+$config['button_alignment'] = 2; // 1 (left), 2 (right) or 0 (disabled) 
 $config['exlogin'] = true; // true or false
 ?>

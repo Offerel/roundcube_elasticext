@@ -1,2 +1,2 @@
-# Elastic Ext Plugin (Roundcube)
-This plugin makes some simple tweaks for the Roundcube elastic skin. For example it moves the send button from the bottom of the compose window to the top right side of the main toolbar. Optionaly, you can also tweak the loginscreen a little bit to make it not that bring. This plugins works only with elastic skin. If you use another skin, the plugin should have no effect.
+# Repository Changed
+Please note, future changes are now at https://codeberg.org/Offerel/roundcube_elasticext. This repository will be archived.

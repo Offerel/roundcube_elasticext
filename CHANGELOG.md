@@ -1,3 +1,7 @@
+### v0.0.5
+ - fixed deprecation warning PHP8
+
+
 ### v0.0.4
  - fixed small glitch in dynamic editor
  - added option to enable/change compose changes

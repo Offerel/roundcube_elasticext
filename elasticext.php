@@ -2,12 +2,14 @@
 /**
  * Roundcube Elastic Ext Plugin
  *
- * @version 0.0.4
+ * @version 0.0.5
  * @author Offerel
- * @copyright Copyright (c) 2021, Offerel
+ * @copyright Copyright (c) 2023, Offerel
  * @license GNU General Public License, version 3
  */
 class elasticext extends rcube_plugin {
+	private $rcube;
+	
 	public function init() {
 		$this->include_stylesheet('css/plugin.css');
 		$this->include_script('js/plugin.js');

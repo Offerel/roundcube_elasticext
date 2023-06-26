@@ -1,9 +1,9 @@
 /**
  * Roundcube Elastic Ext Plugin
  *
- * @version 0.0.3
+ * @version 0.0.5
  * @author Offerel
- * @copyright Copyright (c) 2021, Offerel
+ * @copyright Copyright (c) 2023, Offerel
  * @license GNU General Public License, version 3
  */
 window.onload = function() {

@@ -2,9 +2,9 @@
 /**
  * Roundcube Elastic Ext Plugin
  *
- * @version 0.0.4
+ * @version 0.0.6
  * @author Offerel
- * @copyright Copyright (c) 2021, Offerel
+ * @copyright Copyright (c) 2024, Offerel
  * @license GNU General Public License, version 3
  */
 $files = array();

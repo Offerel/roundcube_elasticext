@@ -1,3 +1,4 @@
+
 html.bgextended {
 	background: url(../background.php) no-repeat center center fixed;
 	background-size: cover;
@@ -32,8 +33,14 @@ button.exsend {
 	display: none;
 }
 #composebodycontainer {
-	position: relative;
-	overflow: hidden;
+    height: calc(100% - 152px) !important;
+}
+.html-editor>textarea {
+    height: 100%;
+    max-height: calc(100% - 11px);
+}
+.fright {
+    float: right;
 }
 .formcontainer .formcontent {
 	height: 100%;

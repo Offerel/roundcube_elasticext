@@ -3,7 +3,7 @@
  *
  * @version 0.0.6
  * @author Offerel
- * @copyright Copyright (c) 2024, Offerel
+ * @copyright Copyright (c) 2025, Offerel
  * @license GNU General Public License, version 3
  */
 window.onload = function() {
@@ -19,9 +19,11 @@ window.onload = function() {
 		let header = document.getElementById('compose-headers');
 		new ResizeObserver(() => document.getElementById('composebodycontainer').style.height = (tbarheight - header.offsetHeight) + 'px').observe(header);
 	} else {
-		document.querySelector('button.send').classList.add('fright');
-		document.querySelector('div.float-right').classList.add('float-left');
-		document.querySelector('div.float-right').classList.remove('float-right');
+		if(document.querySelector('button.send')) {
+			document.querySelector('button.send').classList.add('fright');
+			document.querySelector('div.float-right').classList.add('float-left');
+			document.querySelector('div.float-right').classList.remove('float-right');
+		}
 	}
 
 	if(rcmail.env.exlogin) {
@@ -34,6 +36,7 @@ window.onload = function() {
 
 		if(bgbody) {
 			bghtml.classList.add('bgextended');
+			bghtml.style.backgroundImage='url('+rcmail.env.exlogin+')';
 			bgbody.classList.add('bgtrex');
 			bgct.classList.add('bgtrex');
 			exlogo.classList.add('exlogo');

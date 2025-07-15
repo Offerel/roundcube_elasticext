@@ -4,7 +4,7 @@
  *
  * @version 0.0.6
  * @author Offerel
- * @copyright Copyright (c) 2024, Offerel
+ * @copyright Copyright (c) 2025, Offerel
  * @license GNU General Public License, version 3
  */
 class elasticext extends rcube_plugin {
@@ -36,12 +36,14 @@ class elasticext extends rcube_plugin {
 		}
 
 		if($exlogin) {
-			$this->rcube->output->set_env('exlogin', $exlogin);
+			$this->rcube->output->set_env('exlogin', set_background());
 		}
 
 		$this->add_hook('preferences_list', array($this, 'prefs_list'));
 		$this->add_hook('preferences_save', array($this, 'prefs_save'));
 	}
+
+	
 
 	function prefs_list($args) {
 		if($args['section'] == 'compose') {
@@ -67,4 +69,27 @@ class elasticext extends rcube_plugin {
 		}
 	}
 }
+
+function set_background() {
+		$files = array();
+		
+		$backgroundsDir = dirname(__FILE__).'/backgrounds/';
+		
+		if($handle = @opendir($backgroundsDir)) {
+			while($file = readdir($handle)) {
+				if($file != '.' AND $file != '..' AND str_starts_with(mime_content_type($backgroundsDir.$file), 'image/')) {
+					$files[] = $file;
+				}
+				
+			}
+		}
+
+		$bg_file = $files[array_rand($files)];
+		
+		if (file_exists($backgroundsDir.$bg_file)) {
+			$static = file_exists('static.php') ? 'static.php/':'';
+			return $static.'plugins/elasticext/backgrounds/'.$bg_file;
+		}
+		
+	}
 ?>

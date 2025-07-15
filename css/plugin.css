@@ -1,8 +1,8 @@
-
 html.bgextended {
-	background: url(../background.php) no-repeat center center fixed;
-	background-size: cover;
-	height: 100%;
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .bgtrex{
 	background-color: transparent !important;
